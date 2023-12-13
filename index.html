@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./accset/reset.css">
+    <link rel="stylesheet" href="./accset/responsive.css">
+    <link rel="stylesheet" href="./accset/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,700&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+        <div class="header">
+            <div class="grid grid--header">
+                <div class="header--logo">
+                    <img src="image/Logo.webp" alt="" srcset="">
+                    <span>NIKE</span>
+                </div>
+                <ul class="header--navbar">
+                    <li class="navbar--item item-home active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="navbar--item item-about">
+                        <a href="#">About</a>
+                    <li class="navbar--item item-bills">
+                        <a href="#">Bill</a>
+                    <li class="navbar--item item-cart">
+                        <i class="fa-solid fa-cart-shopping"></i> 
+                        <span class="item-cart__count"></span>
+                       
+                    </li>
+                </ul>
+            </div>        
+        </div>
+        <div class="body">
+            <div class="grid">
+                <ul class="list__product ">         
+                </ul>
+                <div class="cart_section none">
+                    <div class="list__cart none">
+                        <ul class="carttitle">
+                            <span class="cartitem--productname">Product Name</span>
+                        <span class="quatity--title">Quatity</span>
+                        <span class="subtotal--title">Subtotal</span>
+                        <span class="total--title">Total</span>
+                        <span class="clear--title">Clear Cart</span>
+                        </ul>
+                        <ul class="cart__product"></ul>
+                        <div class="cart__footer">
+                            <div class="cart__footer--backmenu">
+                                <input class="btn_backtomenu" type="button" value="Back to menu">
+                            </div>
+                            <div class="cartprices">
+    
+                        
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="cart__empty none">
+                <img src="image/empty-cart.png" alt="">
+                <div class="cart__footer--backmenu">
+                    <input class="btn_backtomenu" type="button" value="Back to menu">
+                 </div>
+            </div>
+                </div>
+                
+                <div class="bill_section none">
+                    <ul class="bill__title">
+                    <span class="id--title">Code</span>
+                    <span class="customer_name--title">Customer Name</span>
+                    <span class="date--title">Date</span>
+                    <span class="item--title">Item Number</span>
+                    <span class="total__quatity--title">Total Quantity</span>
+                    <span class="price--title">Total price</span>
+                    <span class="return--title">Return</span>
+                    </ul>
+                    <div class="bill__container"></div>
+                   <div class="cart__footer--backmenu">
+                        <input class="btn_backtomenu" type="button" value="Back to menu">
+                     </div>
+                        
+                        
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="footer"></div>
+        <div class="overlay overlay__customer--form none">
+            <div class="form_customer">
+                <form action="" class="form">
+                    <div class="form_header">
+                        <Span class="form_title">Thông tin người mua</Span>
+                    <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="form_name">
+                        <label for="">Họ và Tên</label>
+                        <div class="input_wrapper">
+                            <input placeholder="Họ" type="text" pattern="[A-Za-z]+" title="Chỉ nhập chữ" required >
+                            <input placeholder="Tên" type="text"pattern="[A-Za-z]+" title="Chỉ nhập chữ" required  required>
+                          </div>
+                    </div>
+                    <div class="form_mail">
+                        <label for="">Email</label>
+                        <div class="input_mail">
+                            <input placeholder="Email" type="email" required>
+                        </div>
+                        
+                    </div>
+                    <div class="form_phone">
+                        <label for="">Số điện thoại</label>
+                        <div class="input_phone"> 
+                            <input placeholder="Số điện thoại" type="text" pattern="0[0-9]{9,10}" title="Số điện thoại không hợp lệ" required>
+                        </div>
+                       
+                    </div>
+                    <div class="form_addredss">
+                        <label for="">Địa Chỉ</label>
+                        <div class="input_address"> 
+                            <select class="province" name="" id="" required>
+                                <option value="" disabled selected>Chọn Thành Phố</option>
+                        </select>
+                        <select class="district" name="" id="" required>
+                            <option value="" disabled selected>Chọn quận/huyện</option>
+                        </select>
+                            <select class="wards" name="" id=""  required   >
+                                <option value="" disabled selected>Chọn Xã/Phường</option>
+                            </select></div>
+                       
+                        <input type="text" placeholder="Số nhà">
+                    </div>
+                    <div class="form_message">
+                        <label for="">Lời nhắn</label>
+                        <div  class="input_message">
+                            <textarea name="" id="" cols="80" rows="10"></textarea>
+                        </div>
+                        
+                    </div>
+                    <div class="form__btn">
+                       <button class="btn_cancel">Hủy</button>
+                       <button class="btn_confirm">Xác nhận</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+      <div class="toast__message">
+      </div>
+      <div class="overlay overlay__message--delete none">
+        <div class="message__delete">
+            <div class="message--title">
+                <span> Xác nhận </span>
+        </div>
+        <div class="message--content">
+            <span>Bạn có chắc chắn xóa sản phẩm khỏi giỏ hàng ?</span>
+        </div>
+        <div class="message--btn">
+            <Button>Đồng ý</Button>
+            <button>Hủy</button>
+        </div>
+    </div>
+      </div>
+         
+       
+</body>
+<script src="javascript/app.js"></script>
+<script src="javascript/getApiProvince.js"></script>
+<script src="javascript/customer.js"></script>
+</html>
